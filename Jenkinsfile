@@ -48,7 +48,7 @@ stages {
 
                 script {
                 sh '''
-                $DOCKER_HUB_PASS | docker login -u $DOCKER_ID --password-stdin
+                $DOCKER_HUB_PASS | docker login -u $DOCKER_ID
                 docker push $DOCKER_ID/$DOCKER_IMAGE:$DOCKER_TAG
                 '''
                 }
