@@ -55,7 +55,6 @@ stages {
             }
 
         }
-#docker login -u $DOCKER_ID -p $DOCKER_PASS
 stage('Deploiement en dev'){
         environment
         {
